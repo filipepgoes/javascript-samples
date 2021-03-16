@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1072428891055",
+    "firebase_url": "https://cap-app-b3cb8.firebaseio.com",
+    "project_id": "cap-app-b3cb8",
+    "storage_bucket": "cap-app-b3cb8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1072428891055:android:56c0876c0498f80206cd5a",
+        "android_client_info": {
+          "package_name": "com.statvel.capapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1072428891055-sbcvfq741t0v4ep1skmfs6buvvf1nedu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-xrZi0opJK7AyjHIBjnMY22H1IuyDtFk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1072428891055-sbcvfq741t0v4ep1skmfs6buvvf1nedu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

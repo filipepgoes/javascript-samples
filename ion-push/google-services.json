@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1055958710378",
+    "firebase_url": "https://ion-push-87a1b.firebaseio.com",
+    "project_id": "ion-push-87a1b",
+    "storage_bucket": "ion-push-87a1b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1055958710378:android:42391faa589c4bd9b77213",
+        "android_client_info": {
+          "package_name": "com.codesundar.ionpush"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1055958710378-e0eu1m2k304cm8ipds0ccqsl1sgttci4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBjl7mLol1713RimVCLkpsEanZFqGBmKE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1055958710378-e0eu1m2k304cm8ipds0ccqsl1sgttci4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
