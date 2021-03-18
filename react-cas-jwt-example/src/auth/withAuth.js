@@ -17,7 +17,7 @@ export default function withAuth(ComponentInside){
                 version: constant.CAS_VERSION_3_0,
                 redirectUrl : util.getCurrentUrl(),
                 protocol: 'https',
-                endpoint: '<your cas here>',
+                endpoint: '<your-cas-instance>',
                 path: '/cas'
             }
         };
@@ -37,7 +37,7 @@ export default function withAuth(ComponentInside){
         }
         else if (util.isEmpty(ticket) && !(token===null)){    
             console.log('Without ticket, with token, validating token.');
-            fetch('/react-cas-authentication-example-api/rest/api/validaToken', {
+            fetch('/react-cas-authentication-example-api/rest/api/', {
                 credentials: "include",
                 headers: { 'x-access-token': token }
             })
@@ -56,7 +56,8 @@ export default function withAuth(ComponentInside){
             });
         } 
         else {
-            console.log('With ticket, saving as token and redirecting to the smae page.');
+            console.log('With ticket, saving as token and redirecting to the same page.');
+            console.log(typeof cookie.load('token'));
             if (!(typeof cookie.load('token') === 'undefined')){
                 cookie.remove('token');
             }
@@ -66,10 +67,11 @@ export default function withAuth(ComponentInside){
                 {
                     path: '/',
                     domain: 'react-cas-jwt-example.test',
-                    secure: true
+                    secure: true,
+                    sameSite: true
                 }
             );
-            this.setState({redirectToSame: true});
+            window.location.href = window.location.href.split('?')[0];
         }   
     }
 

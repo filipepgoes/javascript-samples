@@ -12,7 +12,7 @@ export default class Secret extends Component {
       componentDidMount() {
         let token = cookie.load('token');
         //console.log(token);
-        fetch('/react-cas-authentication-example-api/rest/api/protegido',{
+        fetch('/react-cas-authentication-example-api/rest/api/protected',{
             credentials: "include",
             headers: { 'x-access-token': token }
         })

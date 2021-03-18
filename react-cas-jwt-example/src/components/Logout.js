@@ -16,7 +16,7 @@ export default class Logout extends Component {
         }
         else{
           message = "Logout successfull.";
-          cookie.remove('token');
+          cookie.remove('token', { path: '/' });
         }
         this.setState({ message: message });
       }
